@@ -33,13 +33,14 @@ body {
             position: absolute;
             backface-visibility: hidden; /* Hides the back until rotated */
             border-radius: 10px;
+            display: block;
         }
 
         .front {
-            background: url('nirmesh files/nirmesh_thumbnail.png') no-repeat center/cover;
+            background: url('nirmesh_files/nirmesh_thumbnail.png') no-repeat center/cover;
         }
 
         .back {
-            background: url('nirmesh files/nirmesh_thumbnail_back.png') no-repeat center/cover;
+            background: url('nirmesh_files/nirmesh_thumbnail_back.png') no-repeat center/cover;
             transform: rotateY(180deg); /* Makes the back image hidden initially */
         }

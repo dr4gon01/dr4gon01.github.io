@@ -37,10 +37,10 @@ body {
         }
 
         .front {
-            background: url('../nirmesh_files/nirmesh_thumbnail.png') no-repeat center/cover;
+            background: url('nirmesh_thumbnail.png') no-repeat center/cover;
         }
 
         .back {
-            background: url('../nirmesh_files/nirmesh_thumbnail_back.png') no-repeat center/cover;
+            background: url('nirmesh_thumbnail_back.png') no-repeat center/cover;
             transform: rotateY(180deg); /* Makes the back image hidden initially */
         }

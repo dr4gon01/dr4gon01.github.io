@@ -6,6 +6,25 @@ body {
             padding: 50px;
         }
 
+        .social-links {
+          margin-top: 20px;
+          font-size: 18px;
+        }
+
+        .social-links a {
+          color: #39ff14; /* Neon Green */
+          text-decoration: none;
+          font-weight: bold;
+          font-family: Monaco, monospace; /* Ensures terminal-like font */
+          transition: color 0.3s ease-in-out;
+        }
+
+        .social-links a:hover {
+          text-decoration: underline;
+          color: #00ff00; /* Brighter Neon Green on Hover */
+        }
+
+
         h1 {
             font-size: 2em;
         }

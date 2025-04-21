@@ -64,51 +64,72 @@ body {
             transform: rotateY(180deg); /* Makes the back image hidden initially */
         }
 
-/* Research / Publications */
+/* === Research / Publications === */
 #research {
-  margin: 3rem 0;
-  font-family: 'Montserrat', sans-serif;
+  margin: 4rem auto;
+  max-width: 800px;
+  font-family: 'VT323', monospace; /* or your preferred neon‑terminal font */
 }
-.papers-container {
-  display: flex;
-  flex-wrap: wrap;
+
+.papers-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
   gap: 2rem;
 }
-.papers-section {
-  flex: 1 1 300px;
+
+.papers {
+  background: rgba(0,0,0,0.6);
+  padding: 1.5rem;
+  border-radius: 8px;
 }
-.papers-section h2 {
-  font-size: 1.3rem;
-  font-weight: 600;
+
+.papers h2 {
+  font-size: 1.6rem;
+  color: #00ff33;
   margin-bottom: 0.75rem;
-  padding-bottom: 0.25rem;
-  border-bottom: 2px solid #333;
-  color: #222;
+  letter-spacing: 0.05em;
+  position: relative;
 }
-.papers-section ul {
+
+.papers h2::after {
+  content: '';
+  display: block;
+  width: 3rem;
+  height: 2px;
+  background: #00ff33;
+  margin-top: 0.3rem;
+}
+
+.papers ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.papers-section li {
-  margin-bottom: 0.6rem;
+
+.papers li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.8rem;
   line-height: 1.4;
-  color: #444;
+  color: #00ff33;
   font-size: 0.95rem;
 }
-.papers-section em {
-  font-style: italic;
-  color: #555;
+
+.papers li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #00ff33;
 }
-.papers-section a {
-  color: #007acc;
+
+.papers a {
+  color: #3399ff;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px dotted #3399ff;
   transition: border-color 0.2s;
 }
-.papers-section a:hover {
-  border-color: #007acc;
+
+.papers a:hover {
+  border-color: #00ff33;
 }
-
-
-

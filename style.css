@@ -64,9 +64,9 @@ body {
             transform: rotateY(180deg); /* Makes the back image hidden initially */
         }
 
-/* === Research / Publications === */
+/* Research / Publications */
 #research {
-  margin: 2rem 1rem;       /* lighter vertical spacing and small side insets */
+  margin: 2rem 1rem;
   max-width: 800px;
   font-family: 'VT323', monospace;
 }
@@ -74,45 +74,37 @@ body {
 .papers-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-  gap: 1.5rem;             /* slightly tighter grid gap */
+  gap: 1.5rem;
 }
 
 .papers {
   background: rgba(0,0,0,0.6);
-  padding: 1.2rem;         /* lighter padding */
-  margin: 1rem 0;          /* lightweight top/bottom margins */
+  padding: 1.2rem;
   border-radius: 8px;
-  text-align: left;        /* force left alignment */
+  margin: 1rem 0;
 }
 
 .papers h2 {
+  text-align: center;        /* center the section title */
   font-size: 1.5rem;
   color: #00ff33;
   margin-bottom: 0.6rem;
   letter-spacing: 0.05em;
 }
 
-.papers h2::after {
-  content: '';
-  display: block;
-  width: 2.5rem;
-  height: 2px;
-  background: #00ff33;
-  margin-top: 0.3rem;
-}
-
 .papers ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  text-align: left;          /* left-align the items */
 }
 
 .papers li {
   position: relative;
   padding-left: 1.2rem;
-  margin-bottom: 0.6rem;   /* lighter spacing between items */
+  margin-bottom: 0.6rem;
   line-height: 1.4;
-  color: #fff;             /* white text for paper content */
+  color: #fff;               /* white text */
   font-size: 0.95rem;
 }
 
@@ -121,7 +113,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  color: #fff;             /* white bullet too */
+  color: #fff;               /* white bullet */
 }
 
 .papers a {
@@ -135,6 +127,10 @@ body {
   border-color: #00ff33;
 }
 
-.papers a:hover {
-  border-color: #00ff33;
+/* Divider styling */
+.divider {
+  text-align: center;       /* center the dashed line */
+  color: #666;
+  margin: 1rem 0 0;         /* space above, none below */
+  font-family: monospace;
 }

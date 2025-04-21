@@ -63,3 +63,52 @@ body {
             background: url('nirmesh_files/nirmesh_thumbnail_back.png') no-repeat center/cover;
             transform: rotateY(180deg); /* Makes the back image hidden initially */
         }
+
+/* Research / Publications */
+#research {
+  margin: 3rem 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.papers-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.papers-section {
+  flex: 1 1 300px;
+}
+.papers-section h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid #333;
+  color: #222;
+}
+.papers-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.papers-section li {
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+  color: #444;
+  font-size: 0.95rem;
+}
+.papers-section em {
+  font-style: italic;
+  color: #555;
+}
+.papers-section a {
+  color: #007acc;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+.papers-section a:hover {
+  border-color: #007acc;
+}
+
+
+

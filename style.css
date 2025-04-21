@@ -64,39 +64,50 @@ body {
             transform: rotateY(180deg); /* Makes the back image hidden initially */
         }
 
-/* Research / Publications */
+/* === Research / Publications === */
 #research {
   margin: 2rem 1rem;
-  max-width: 800px;
+  max-width: 900px;
   font-family: 'VT323', monospace;
 }
 
+/* two‑column grid */
 .papers-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
   gap: 1.5rem;
 }
 
+/* card styling */
 .papers {
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   padding: 1.2rem;
-  border-radius: 8px;
-  margin: 1rem 0;
+  border-radius: 6px;
 }
 
+/* centered heading with underline */
 .papers h2 {
-  text-align: center;        /* center the section title */
-  font-size: 1.5rem;
+  position: relative;
+  text-align: center;
   color: #00ff33;
-  margin-bottom: 0.6rem;
-  letter-spacing: 0.05em;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
+.papers h2::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #00ff33;
+  margin: 0.4rem auto 0;
+}
+
+/* left‑aligned white list */
 .papers ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: left;          /* left-align the items */
 }
 
 .papers li {
@@ -104,7 +115,7 @@ body {
   padding-left: 1.2rem;
   margin-bottom: 0.6rem;
   line-height: 1.4;
-  color: #fff;               /* white text */
+  color: #fff;
   font-size: 0.95rem;
 }
 
@@ -113,24 +124,23 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  color: #fff;               /* white bullet */
+  color: #fff;
 }
 
+/* link styling */
 .papers a {
   color: #3399ff;
   text-decoration: none;
   border-bottom: 1px dotted #3399ff;
   transition: border-color 0.2s;
 }
-
 .papers a:hover {
   border-color: #00ff33;
 }
 
-/* Divider styling */
-.divider {
-  text-align: center;       /* center the dashed line */
-  color: #666;
-  margin: 1rem 0 0;         /* space above, none below */
-  font-family: monospace;
+/* full‑width dashed divider */
+.section-divider {
+  border: 0;
+  border-top: 1px dashed rgba(0, 255, 51, 0.6);
+  margin: 2rem 0;
 }

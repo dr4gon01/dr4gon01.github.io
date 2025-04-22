@@ -79,10 +79,15 @@ body {
 }
 
 /* card styling */
+/* Override the global centering for these cards */
 .papers {
+  /* existing styles… */
   background: rgba(0, 0, 0, 0.6);
   padding: 1.2rem;
   border-radius: 6px;
+
+  /* new: force left alignment */
+  text-align: left !important;
 }
 
 /* Force headings & lists left-aligned in .papers */
